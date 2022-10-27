@@ -31,6 +31,10 @@
         
 //     }
 
+
+
+
+
 // es:2 
 // Pari e Dispari
 // L’utente sceglie pari o dispari e inserisce un numero da 1 a 5.
@@ -40,12 +44,20 @@
 // Dichiariamo chi ha vinto.
    
    
+    function somma(){
+        let somma = scegli_numero + genera_numero
+    }
+
+    for (let index = 0; index < 10; index++) {
+        
+        
     
     let scegli = prompt(`scegli pari o dispari`)
 
 
     if (scegli != "pari" && scegli !="dispari") {
-    alert("devi sceglioere se pari o dispari");
+    alert("devi scegliere se pari o dispari");
+    
     }
 
     let scegli_numero = parseInt(prompt("inserisci un numero da 1 a 5"));
@@ -54,14 +66,14 @@
 
     let pc = alert(`pc ha inserito ${genera_numero}` )
 
-    let somma =scegli_numero + genera_numero
+    let somma = scegli_numero + genera_numero
 
     if (somma % 2 == 0 && scegli === "pari") {
         alert("hai vinto")
     }
 
     else if (somma % 2 == 0 && scegli !== "pari") {
-        alert("hai perso")
+        alert("pc ha vinto")
     }
 
     else if (somma % 2 != 0 && scegli === "dispari"){
@@ -69,9 +81,10 @@
     }
 
     else if (somma % 2 != 0 && scegli !== "dispari"){
-        alert("hai perso")
+        alert("pc ha vinto")
     }
 
+    }
 
     
 
