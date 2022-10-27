@@ -5,27 +5,37 @@
 
 let parola = prompt("inserisci la parola da controllare");
 let inverso = "";
-let condizione1 = console.log (`${parola} è una parola palindroma`)
-let condizione2 = console.log (`${parola} non è una parola palindroma`)
+let condizione_1 = console.log (`${parola} è una parola palindroma`)
+let condizione_2 = console.log (`${parola} non è una parola palindroma`)
 
 
-function parolapalindroma (condizione1, condizione2){
-    let parola = prompt("inserisci la parola da controllare");
-    let inverso = "";
-    
+    function palindroma(){
 
-
-    for (let i = parola.length -1 ; i >= 0; i--) {
+        for (let i = parola.length -1 ; i >= 0; i--) {
     
         let palindroma = inverso += parola[i];
     }
+    return inverso;
+ 
+    }
+   
+
     
-    if(parola === inverso){
+    if(parola === palindroma()){
+
         console.log (`${parola} è una parola palindroma`)
-    }
-    
-    else if (parola !== inverso){
+        
+    } else if (parola !== palindroma()){
         console.log (`${parola} non è una parola palindroma`)
+        
     }
+         
+         
     
-}
+    
+   
+   
+
+
+    
+    
